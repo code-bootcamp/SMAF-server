@@ -17,7 +17,7 @@ steps:
         "set",
         "image",
         "deployment/teamproject05-backend-api-resource",
-        "team-backend-sha256-1=asia.gcr.io/teamproject05/team-backend:1.9",
+        "team-backend-sha256-1=asia.gcr.io/teamproject05/team-backend:2.0",
       ]
     env:
       - CLOUDSDK_COMPUTE_ZONE=asia-northeast3
