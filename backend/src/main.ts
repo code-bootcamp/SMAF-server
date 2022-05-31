@@ -15,6 +15,7 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname, '..', 'static'));
   app.enableCors({
     origin: [
+      'http://smaf.site',
       'http://localhost:3000',
       'https://backend.smaf.shop',
       'http://localhost:5500',

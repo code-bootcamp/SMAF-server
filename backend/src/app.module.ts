@@ -51,6 +51,7 @@ import { ProjectFileModule } from './apis/projectFile/projectFile.module';
       context: ({ req, res }) => ({ req, res }),
       cors: {
         origin: [
+          'http://smaf.site',
           'http://localhost:3000',
           'https://backend.smaf.shop',
           'http://localhost:5500',

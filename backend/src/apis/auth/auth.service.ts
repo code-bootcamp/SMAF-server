@@ -21,7 +21,7 @@ export class AuthService {
     //res.setHeader('Set-Cookie', `refreshToken=${refreshToken}; path=/;`);
 
     //배포
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.setHeader('Access-Control-Allow-Origin', 'http://smaf.site');
     res.setHeader(
       'Set-Cookie',
       `refreshToken=${refreshToken}; path=/; domain=.backend.smaf.shop; SameSite=None; Secure; httpOnly;`,
@@ -134,7 +134,7 @@ export class AuthService {
         <p class="txt" style="text-align: center; margin-top: 20px">👇🏼👇🏼👇🏼</p>
         <div style="display: flex; justify-content: center">
           <a
-            href="http://localhost:3000"
+            href="http://smaf.site"
             id="linkbox"
             style="
               display: block;
@@ -203,6 +203,6 @@ export class AuthService {
     }
 
     this.setRefreshToken({ user, res });
-    res.redirect('http://localhost:3000');
+    res.redirect('http://smaf.site');
   }
 }
